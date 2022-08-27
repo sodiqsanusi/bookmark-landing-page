@@ -39,3 +39,21 @@ nav{
   background-color: transparent;
   cursor: pointer;
 }
+
+.bluecurve-bg{
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.bluecurve-bg::after{
+  content: '';
+  position: absolute;
+  top: 21%;
+  width: 80%;
+  height: 80%;
+  background-color: #5368df;
+  border-bottom-right-radius: 40%;
+  right: 0;
+  z-index: -1;
+  transform: scaleX(-1);
+}
