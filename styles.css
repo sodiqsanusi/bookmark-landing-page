@@ -58,7 +58,8 @@ nav{
   margin: 0 auto;
 }#illustration-img{
   transform: scaleX(-1);
-  width: 80%;
+  width: 85%;
+  margin-bottom: 5em;
 }
 
 .bluecurve-bg::after{
@@ -128,7 +129,7 @@ article{
   transform: scale(1);
   opacity: 100%;
   color: #252b46;
-}#illustration-buttons button::after{
+}#illustration-buttons button:hover::after, #illustration-buttons button:focus::after{
   content: '';
   position: absolute;
   width: 50%;
@@ -139,4 +140,46 @@ article{
 }
 #outlier1{
   border-bottom: 1px solid #9194a1;
+}#outlier2::after{
+  height: 100%;
+}.illustration-btn{
+  width: 45%;
+  background-color: #5368df;
+  color: #fff;
+  border-radius: 8px;
+  padding: .8em 0;
+  margin-bottom: 2em;
 }
+
+.browser-cards{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+  border-radius: 8px;
+  box-shadow:  0px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 1em 0;
+}.browser-cards div{
+  margin: 1.5em 0;
+}.browser-cards h3{
+  color: #252b46;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+}.browser-cards p{
+  font-size: 1rem;
+  color: #9194a1;
+  margin-bottom: 1.5em;
+}.browser-cards button{
+  width: 90%;
+  margin: 1em 0 0;
+  border-radius: 8px;
+  padding: .9em 0;
+  background-color: #5368df;
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+
