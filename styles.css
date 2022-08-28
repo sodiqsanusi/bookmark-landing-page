@@ -51,6 +51,9 @@ nav{
   outline: none;
   border: none;
   background-color: transparent;
+}#nav--button:hover, #nav--button:focus{
+  transform: scale(0.95);
+  opacity: 80%;
 }
 
 .bluecurve-bg{
@@ -104,15 +107,24 @@ article{
 }#header-buttons button{
   width: 48%;
   padding: 1em .5em;
-  border-radius: 8px;
+  border-radius: 5px;
+  border: 1px solid transparent;
   font-weight: 500;
   font-size: min(.9rem, 80%);
   background-color: #5368df;
   color: #fff;
+  transition: .3s;
 }#header-buttons button:last-of-type{
   background: transparent;
   color: #9194a1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}#header-buttons button:hover, #header-buttons button:focus{
+  color: #5368df;
+  border: 1px solid #5368df;
+  background-color: transparent;
+}#header-buttons button:last-of-type:hover, #header-buttons button:last-of-type:focus{
+  color: #9194a1;
+  border-color: #9194a1;
 }
 
 #illustration-buttons{
@@ -128,11 +140,13 @@ article{
   color: #9194a1;
   background-color: transparent;
   border-top: 1px solid #9194a1;
-}#illustration-buttons button:hover, #illustration-buttons button:focus{
-  transform: scale(1);
-  opacity: 100%;
+}#illustration-buttons button:hover{
+  color: #fa5757;
+}.illustration-btn--active{
   color: #252b46;
-}#illustration-buttons button:hover::after, #illustration-buttons button:focus::after{
+}
+
+.illustration-btn--active::after{
   content: '';
   position: absolute;
   width: 50%;
@@ -153,6 +167,9 @@ article{
   padding: .8em 0;
   margin-bottom: 2em;
   font-size: .8rem;
+}.illustration-btn:hover, .illustration-btn:focus{
+  transform: scale(0.95);
+  opacity: 80%;
 }
 
 .browser-cards{
@@ -178,12 +195,18 @@ article{
 }.browser-cards button{
   width: 85%;
   margin: 1em 0 0;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: .9em 0;
   background-color: #5368df;
   color: #fff;
   font-size: .9rem;
   font-weight: 500;
+  border: 1px solid transparent;
+  transition: .3s;
+}.browser-cards button:hover, .browser-cards button:focus{
+  color: #5368df;
+  background-color: transparent;
+  border: 1px solid #5368df;
 }
 #faq-accordion{
   list-style: none;
