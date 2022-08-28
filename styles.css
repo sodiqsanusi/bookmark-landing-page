@@ -34,10 +34,13 @@ button{
   border: none;
   outline: none;
   transition: transform .3s, opacity .3s;
-}button:hover, button:focus{
+}section{
+  margin-top: 5em;
+}
+/* button:hover, button:focus{
   transform: scale(0.95);
   opacity: 80%;
-}
+} */
 
 nav{
   display: flex;
@@ -48,6 +51,9 @@ nav{
   outline: none;
   border: none;
   background-color: transparent;
+}#nav--button:hover, #nav--button:focus{
+  transform: scale(0.95);
+  opacity: 80%;
 }
 
 .bluecurve-bg{
@@ -101,15 +107,24 @@ article{
 }#header-buttons button{
   width: 48%;
   padding: 1em .5em;
-  border-radius: 8px;
+  border-radius: 5px;
+  border: 1px solid transparent;
   font-weight: 500;
   font-size: min(.9rem, 80%);
   background-color: #5368df;
   color: #fff;
+  transition: .3s;
 }#header-buttons button:last-of-type{
   background: transparent;
   color: #9194a1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}#header-buttons button:hover, #header-buttons button:focus{
+  color: #5368df;
+  border: 1px solid #5368df;
+  background-color: transparent;
+}#header-buttons button:last-of-type:hover, #header-buttons button:last-of-type:focus{
+  color: #9194a1;
+  border-color: #9194a1;
 }
 
 #illustration-buttons{
@@ -117,7 +132,7 @@ article{
   flex-direction: column;
   list-style-type: none;
   padding: 0;
-  margin: 2em 0;
+  margin: 2em 0 4em;
 }#illustration-buttons button{
   position: relative;
   width: 95%;
@@ -125,11 +140,13 @@ article{
   color: #9194a1;
   background-color: transparent;
   border-top: 1px solid #9194a1;
-}#illustration-buttons button:hover, #illustration-buttons button:focus{
-  transform: scale(1);
-  opacity: 100%;
+}#illustration-buttons button:hover{
+  color: #fa5757;
+}.illustration-btn--active{
   color: #252b46;
-}#illustration-buttons button:hover::after, #illustration-buttons button:focus::after{
+}
+
+.illustration-btn--active::after{
   content: '';
   position: absolute;
   width: 50%;
@@ -146,9 +163,13 @@ article{
   width: 45%;
   background-color: #5368df;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: .8em 0;
   margin-bottom: 2em;
+  font-size: .8rem;
+}.illustration-btn:hover, .illustration-btn:focus{
+  transform: scale(0.95);
+  opacity: 80%;
 }
 
 .browser-cards{
@@ -172,14 +193,97 @@ article{
   color: #9194a1;
   margin-bottom: 1.5em;
 }.browser-cards button{
-  width: 90%;
+  width: 85%;
   margin: 1em 0 0;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: .9em 0;
   background-color: #5368df;
   color: #fff;
   font-size: .9rem;
   font-weight: 500;
+  border: 1px solid transparent;
+  transition: .3s;
+}.browser-cards button:hover, .browser-cards button:focus{
+  color: #5368df;
+  background-color: transparent;
+  border: 1px solid #5368df;
+}
+#faq-accordion{
+  list-style: none;
+  padding: 0%;
+  margin-bottom: 2em;
+}#faq-accordion li{
+  width: 90%;
+  margin: 0 auto;
+}#faq-accordion button{
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 1em 0;
+  color: #252b46;
+  font-size: min(.95rem, 4.5vw);
+  background-color: transparent;
+  border-bottom: 1px solid #9194a1;
 }
 
+#form-section{
+  background-color: #5368df;
+  padding: 3em 1.75em 2em;
+  color: #fff;
+}#form-section p{
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-bottom: .5em;
+}#form-section h3{
+  font-weight: 500;
+  font-size: 1.17rem;
+  margin-bottom: 1em;
+}#form-section input{
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: .5em 1.2em;
+  border-radius: 5px;
+}#form-section input::placeholder{
+  color: #9194a1;
+  font-size: .9rem;
+}#form-section button{
+  width: 100%;
+  padding: .8em 0;
+  background-color: #fa5757;
+  color: #fff;
+  border-radius: 5px;
+  font-size: .8rem;
+  margin: .5em 0 .9em;
+}
 
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #252b46;
+  color: #fff;
+  padding: 1.5em 0;
+}
+
+footer ul{
+  padding: 0%;
+  list-style: none;
+}footer a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}footer li{
+  margin: 1.5em 0;
+}#outlier3{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
