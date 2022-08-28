@@ -18,12 +18,14 @@
   </nav>
 
   <header>
-    <div class="bluecurve-bg"><img src="./images/illustration-hero.svg" alt="" aria-hidden="true" role="presentation"></div>
+    <div class="bluecurve-bg">
+      <div class="img-container"><img src="./images/illustration-hero.svg" alt="" aria-hidden="true" role="presentation"></div>
+    </div>
     <article>
       <h1>A Simple Bookmark Manager</h1>
       <p>A clean and simple interface to organize your favourite websites. Open a new 
         browser tab and see your sites load instantly. Try it for free.</p>
-      <div>
+      <div id="header-buttons">
         <button>Get it on Chrome</button>
         <button>Get it on Firefox</button>
       </div>
@@ -31,58 +33,67 @@
   </header>
 
   <main>
-    <h2>Features</h2>
-    <p>Our aim is to make it quick and easy for you to access your favourite websites. 
-      Your bookmarks sync between your devices so you can access them on the go.</p>
-    <ul>
-      <button>Simple Bookmarking</button>
-      <button>Speedy Searching</button>
-      <button>Easy Sharing</button>
-    </ul>
+    <article>
+      <h2>Features</h2>
+      <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+        Your bookmarks sync between your devices so you can access them on the go.</p>
+      <ul id="illustration-buttons">
+        <li><button>Simple Bookmarking</button></li>
+        <li><button>Speedy Searching</button></li>
+        <li><button id="outlier1">Easy Sharing</button></li> 
+      </ul>
+    </article>
     <div>
-      <div><img src="./images/illustration-features-tab-1.svg" alt="" aria-hidden="true" role="presentation"></div>
+      <div class="bluecurve-bg" id="outlier2" style="transform: scaleX(-1);">
+        <div class="img-container" id="illustration-img"><img src="./images/illustration-features-tab-1.svg" alt="" aria-hidden="true" role="presentation"></div>
+      </div>
+      
       <article>
-        <h3>Bookmark in one click</h3>
+        <h2>Bookmark in one click</h2>
         <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
           gives you complete control over how you manage your favourite sites.</p>
-        <button>More Info</button>
+        <button class="illustration-btn">More Info</button>
       </article>
     </div>
   </main>
 
   <section>
-    <h2>Download the extension</h2>
-    <p>We've got more browsers in the pipeline. Please do let us know if you've 
-      got a favourite you'd like us to prioritize.</p>
+    <article>
+      <h2>Download the extension</h2>
+      <p>We've got more browsers in the pipeline. Please do let us know if you've 
+        got a favourite you'd like us to prioritize.</p>
+    </article>  
     <div>
-      <div>
+      <div class="browser-cards">
         <div><img src="./images/logo-chrome.svg" alt="The Chrome browser's logo"></div>
         <h3>Add to Chrome</h3>
         <p>Minimum version 62</p>
-        <div><img src="./images/bg-dots.svg" alt="" aria-hidden="true" role="presentation"></div>
+        <span><img src="./images/bg-dots.svg" alt="" aria-hidden="true" role="presentation"></span>
         <button>Add & Install Extension</button>
       </div>
-      <div>
+      <div class="browser-cards">
         <div><img src="./images/logo-firefox.svg" alt="Firefox browser logo"></div>
         <h3>Add to Firefox</h3>
         <p>Minimum version 55</p>
-        <div><img src="./images/bg-dots.svg" alt="" aria-hidden="true" role="presentation"></div>
+        <span><img src="./images/bg-dots.svg" alt="" aria-hidden="true" role="presentation"></span>
         <button>Add & Install Extension</button>
       </div>
-      <div>
+      <div class="browser-cards">
         <div><img src="./images/logo-opera.svg" alt="Opera browser's logo"></div>
         <h3>Add to Opera</h3>
         <p>Minimum version 46</p>
-        <div><img src="./images/bg-dots.svg" alt="" aria-hidden="true" role="presentation"></div>
+        <span><img src="./images/bg-dots.svg" alt="" aria-hidden="true" role="presentation"></span>
         <button>Add & Install Extension</button>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Frequently Asked Questions</h2>
-    <p>Here are some of our FAQs. If you have any other questions you'd like 
-      answered please feel free to email us.</p>
+    <article>
+      <h2>Frequently Asked Questions</h2>
+      <p>Here are some of our FAQs. If you have any other questions you'd like 
+        answered please feel free to email us.</p>
+    </article>
     <ul>
       <li>
         <button>
