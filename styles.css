@@ -15,6 +15,7 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  text-align: center;
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -28,6 +29,16 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /* End of the CSS Reset */
 
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: transform .3s, opacity .3s;
+}button:hover, button:focus{
+  transform: scale(0.95);
+  opacity: 80%;
+}
+
 nav{
   display: flex;
   justify-content: space-between;
@@ -37,12 +48,17 @@ nav{
   outline: none;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .bluecurve-bg{
   position: relative;
   margin-bottom: 2em;
+}.img-container{
+  width: 90%;
+  margin: 0 auto;
+}#illustration-img{
+  transform: scaleX(-1);
+  width: 80%;
 }
 
 .bluecurve-bg::after{
@@ -56,4 +72,71 @@ nav{
   right: 0;
   z-index: -1;
   transform: scaleX(-1);
+}
+
+article{
+  width: 90%;
+  margin: 2em auto;
+}article h1, article h2{
+  color: #252b46;
+}article h1{
+  font-weight: 500;
+  font-size: 1.5rem;
+}article p{
+  color: #9194a1;
+  padding: 0 .5em;
+  margin: 1em 0;
+  font-size: .9rem;
+}article h2{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#header-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5em;
+}#header-buttons button{
+  width: 48%;
+  padding: 1em .5em;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: min(.9rem, 80%);
+  background-color: #5368df;
+  color: #fff;
+}#header-buttons button:last-of-type{
+  background: transparent;
+  color: #9194a1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#illustration-buttons{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 2em 0;
+}#illustration-buttons button{
+  position: relative;
+  width: 95%;
+  padding: 1em 0;
+  color: #9194a1;
+  background-color: transparent;
+  border-top: 1px solid #9194a1;
+}#illustration-buttons button:hover, #illustration-buttons button:focus{
+  transform: scale(1);
+  opacity: 100%;
+  color: #252b46;
+}#illustration-buttons button::after{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: 0;
+  background-color: #fa5757;
+  left: 25%;
+}
+#outlier1{
+  border-bottom: 1px solid #9194a1;
 }
