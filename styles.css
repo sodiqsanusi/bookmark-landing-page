@@ -433,7 +433,7 @@ footer li{
   align-items: center;
 }
 
-@media(min-width: 660px){
+@media(min-width: 750px){
   nav{
     width: 90%;
     margin: 0 auto;
