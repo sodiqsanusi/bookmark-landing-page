@@ -530,12 +530,29 @@ footer li{
     display: flex;
     justify-content: space-between;
     align-items: start;
-  }
-  #email-form div{
+  }#email-form div{
     width: 65%;
-  }
-  #email-form button{
+  }#email-form button{
     width: 30%;
     margin: 0;
+  }
+
+  footer{
+    flex-direction: row;
+    align-items: center;
+    padding: .5em 10%;
+  }
+  footer ul{
+    display: flex;
+    margin-left: 5%;
+    width: 50%;
+    max-width: 300px;
+    justify-content: space-between;
+  }footer a{
+    font-size: .6rem;
+  }#outlier3{
+    width: 15%;
+    margin-left: auto;
+    max-width: 130px;
   }
 }
