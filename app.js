@@ -8,6 +8,10 @@ const illustrateImage = document.getElementById('illustration-image');
 const illustrateHeading = document.getElementById('illustration-heading');
 const illustrateParagraph = document.getElementById('illustration-paragraph');
 let accordionButtons = document.getElementsByClassName('accordion-btn');
+const emailForm = document.getElementById('email-form');
+const emailInput = document.getElementById('email-input');
+const errMessage = document.querySelector('.error-message')
+const formBtn = document.querySelector('#form-section button')
 
 
 openMobileNavBtn.onclick = () => {
@@ -61,3 +65,15 @@ accordionButtons.forEach((elem, index) => {
     dets.classList.toggle('show');
   }
 })
+
+emailForm.onsubmit = (e) => {
+  e.preventDefault();
+  if(/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi.test(emailInput.value)){
+    errMessage.textContent = 'Email has been added to waiting list'
+    errMessage.style.backgroundColor = '#4E944F'
+    emailInput.style.borderColor = '#4E944F'
+    formBtn.style.display = 'none'
+  }
+  emailInput.classList.add('err-input')
+  errMessage.style.display = 'block'
+}
