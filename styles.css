@@ -304,6 +304,9 @@ article{
   margin: .5em 0 1em;
   color: #9194a1;
   text-align: left;
+  font-size: min(.9rem, 4.5vw);
+}.show{
+  display: block;
 }
 
 #form-section{

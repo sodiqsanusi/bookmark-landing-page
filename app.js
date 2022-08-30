@@ -7,6 +7,8 @@ const illustrateBtn3 = document.getElementById('illustrationBtn3');
 const illustrateImage = document.getElementById('illustration-image');
 const illustrateHeading = document.getElementById('illustration-heading');
 const illustrateParagraph = document.getElementById('illustration-paragraph');
+let accordionButtons = document.getElementsByClassName('accordion-btn');
+
 
 openMobileNavBtn.onclick = () => {
   mobileNav.style.display = 'flex';
@@ -49,4 +51,13 @@ let changeActiveIllustration = (elem) => {
 
 [illustrateBtn1, illustrateBtn2, illustrateBtn3].forEach(elem => {
   elem.onclick = () => changeActiveIllustration(elem);
+})
+
+accordionButtons = [...accordionButtons];
+accordionButtons.forEach((elem, index) => {
+  elem.onclick = () => {
+    elem.classList.toggle('accordionbtn--active')
+    let dets = document.getElementById(`det${index+1}`)
+    dets.classList.toggle('show');
+  }
 })
