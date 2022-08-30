@@ -313,23 +313,38 @@ article{
   background-color: #5368df;
   padding: 3em 1.75em 2em;
   color: #fff;
-}#form-section p{
+}.formP{
   font-size: .75rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
   margin-bottom: .5em;
-}#form-section h3{
+}.error-message{
+  font-size: .8rem;
+  font-style: italic;
+  font-weight: 400;
+  text-align: left;
+  background-color: #fa5757;
+  padding: .3em .9em;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: .5em;
+  display: none;
+}
+#form-section h3{
   font-weight: 500;
   font-size: 1.17rem;
   margin-bottom: 1em;
-}#form-section input{
+}.email-input{
   outline: none;
-  border: none;
+  border: 2px solid #fff;
   width: 100%;
-  padding: .5em 1.2em;
+  padding: .5em 1em;
   border-radius: 5px;
-}#form-section input::placeholder{
+}.err-input{
+  border-color: #fa5757;
+  border-radius: 5px 5px 0 0;
+}
+#form-section input::placeholder{
   color: #9194a1;
   font-size: .9rem;
 }#form-section button{
