@@ -511,4 +511,31 @@ footer li{
   }.browser-cards button{
     font-size: .7rem;
   }
+
+  #faq-section{
+    max-width: 645px;
+    margin: 7em auto 0;
+  }#faq-section li:first-of-type{
+    border-top: 1px solid #9194a1;
+  }#faq-section  .illustration-btn{
+    width: 25%;
+  }
+
+  #form-section div{
+    max-width: 490px;
+    margin: 0 auto;
+  }
+  #email-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  #email-form div{
+    width: 65%;
+  }
+  #email-form button{
+    width: 30%;
+    margin: 0;
+  }
 }
