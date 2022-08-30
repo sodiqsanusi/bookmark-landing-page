@@ -488,4 +488,27 @@ footer li{
   }#main-illustration{
     display: flex;
   }
+
+  #cards-container{
+    display: flex;
+    max-width: 910px;
+    margin: 0 auto;
+  }.browser-cards{
+    width: 30%;
+    align-items: center;
+  }.browser-cards:nth-of-type(2){
+    transform: translateY(40px);
+  }.browser-cards:nth-of-type(3){
+    transform: translateY(80px);
+  }
+  .browser-cards div{
+    width: 40%;
+    margin: 1.5em auto;
+  }.browser-cards h3{
+    font-size: 1rem;
+  }.browser-cards p{
+    font-size: .7rem;
+  }.browser-cards button{
+    font-size: .7rem;
+  }
 }
